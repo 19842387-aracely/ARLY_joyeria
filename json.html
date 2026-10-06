@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARLY | JSON</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <div class="logo">
+            ARLY
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html">jQuery</a>
+            <a href="json.html">JSON</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="cuestionario.html">Cuestionario</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO JSON -->
+    <main>
+
+        <section class="section">
+
+            <p class="subtitle">INVESTIGACIÓN WEB</p>
+
+            <h1>JSON</h1>
+
+            <p>
+                JSON significa JavaScript Object Notation. Es un formato
+                ligero utilizado para representar e intercambiar datos
+                entre diferentes sistemas.
+            </p>
+
+        </section>
+
+
+        <!-- ¿QUÉ ES JSON? -->
+        <section class="section">
+
+            <h2>¿Qué es JSON?</h2>
+
+            <p>
+                JSON es un formato de texto utilizado para organizar
+                información de una manera sencilla y fácil de leer.
+                Es muy utilizado en páginas web y aplicaciones para
+                enviar y recibir datos.
+            </p>
+
+            <p>
+                Una de sus principales ventajas es que puede ser entendido
+                tanto por las personas como por los programas.
+            </p>
+
+        </section>
+
+
+        <!-- ¿POR QUÉ ES UN ESTÁNDAR? -->
+        <section class="section">
+
+            <h2>¿Por qué JSON es un estándar?</h2>
+
+            <p>
+                JSON se convirtió en un formato muy utilizado porque es
+                sencillo, ligero y compatible con muchos lenguajes de
+                programación.
+            </p>
+
+            <p>
+                Esto permite que diferentes aplicaciones y servidores
+                puedan intercambiar información de una manera organizada.
+            </p>
+
+        </section>
+
+
+        <!-- CLAVE Y VALOR -->
+        <section class="section">
+
+            <h2>Pares clave-valor</h2>
+
+            <p>
+                Los datos en JSON se organizan principalmente mediante
+                pares de <strong>clave y valor</strong>.
+            </p>
+
+            <pre><code>
+{
+    "nombre": "ARLY",
+    "categoria": "Joyería",
+    "pais": "El Salvador"
+}
+            </code></pre>
+
+            <p>
+                En este ejemplo, <strong>nombre</strong>, <strong>categoria</strong>
+                y <strong>pais</strong> son las claves, mientras que
+                "ARLY", "Joyería" y "El Salvador" son sus valores.
+            </p>
+
+        </section>
+
+
+        <!-- OBJETOS Y ARRAYS -->
+        <section class="section">
+
+            <h2>Objetos y arrays</h2>
+
+            <p>
+                Un objeto JSON utiliza llaves <strong>{ }</strong> para
+                almacenar información mediante pares clave-valor.
+            </p>
+
+            <p>
+                Un array utiliza corchetes <strong>[ ]</strong> y permite
+                almacenar varios valores.
+            </p>
+
+            <pre><code>
+{
+    "productos": [
+        "Anillo",
+        "Collar",
+        "Pulsera"
+    ]
+}
+            </code></pre>
+
+        </section>
+
+
+        <!-- JSON VS OBJETO JAVASCRIPT -->
+        <section class="section">
+
+            <h2>Objeto JavaScript vs JSON</h2>
+
+            <p>
+                Aunque se parecen, un objeto de JavaScript y un texto JSON
+                no son exactamente lo mismo.
+            </p>
+
+            <pre><code>
+// Objeto JavaScript
+
+const joya = {
+    nombre: "Anillo",
+    precio: 25
+};
+
+
+// JSON
+
+{
+    "nombre": "Anillo",
+    "precio": 25
+}
+            </code></pre>
+
+            <p>
+                Un objeto JavaScript es una estructura utilizada directamente
+                dentro del código, mientras que JSON es un formato de texto
+                utilizado principalmente para intercambiar información.
+            </p>
+
+        </section>
+
+
+        <!-- JSON EN APLICACIONES WEB -->
+        <section class="section">
+
+            <h2>JSON en aplicaciones web</h2>
+
+            <p>
+                JSON es muy utilizado cuando una página web necesita
+                comunicarse con un servidor o una API.
+            </p>
+
+            <p>
+                Por ejemplo, una tienda en línea como ARLY podría solicitar
+                a un servidor la información de sus productos. El servidor
+                podría enviar los datos en formato JSON y JavaScript podría
+                utilizarlos para mostrarlos en la página.
+            </p>
+
+            <pre><code>
+{
+    "producto": "Collar",
+    "precio": 35,
+    "disponible": true
+}
+            </code></pre>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 ARLY | JSON
+        </p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ARLY | Cuestionario Web</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <div class="logo">
+            ARLY
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="javascript.html">JavaScript</a>
+            <a href="jquery.html">jQuery</a>
+            <a href="json.html">JSON</a>
+            <a href="hosting.html">Hosting</a>
+            <a href="cuestionario.html">Cuestionario</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CUESTIONARIO -->
+    <main>
+
+        <section class="section">
+
+            <p class="subtitle">PÁGINA DE REPASO</p>
+
+            <h1>Cuestionario Web</h1>
+
+            <p>
+                Pon a prueba tus conocimientos sobre JavaScript,
+                jQuery, JSON, Web Hosting y Dominios.
+            </p>
+
+
+            <!-- PREGUNTA 1 -->
+            <div class="quiz-question">
+
+                <h3>1. ¿Qué tecnología se encarga principalmente de la estructura de una página web?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    JavaScript
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 2 -->
+            <div class="quiz-question">
+
+                <h3>2. ¿Para qué se utiliza principalmente JavaScript?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    Para agregar interactividad y comportamiento.
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    Para crear únicamente imágenes.
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Para registrar dominios.
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 3 -->
+            <div class="quiz-question">
+
+                <h3>3. ¿Qué símbolo se utiliza habitualmente en jQuery?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    $
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    #
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    @
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 4 -->
+            <div class="quiz-question">
+
+                <h3>4. ¿Qué hace el método slideToggle()?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="a">
+                    Cambia el nombre de un dominio.
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="b">
+                    Muestra u oculta un elemento con un efecto deslizante.
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="c">
+                    Convierte un objeto en una imagen.
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 5 -->
+            <div class="quiz-question">
+
+                <h3>5. ¿Qué es JSON?</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="a">
+                    Un lenguaje de estilos.
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="b">
+                    Un tipo de servidor.
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="c">
+                    Un formato para representar e intercambiar datos.
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 6 -->
+            <div class="quiz-question">
+
+                <h3>6. ¿Cuál de los siguientes es un ejemplo de TLD?</h3>
+
+                <label>
+                    <input type="radio" name="q6" value="a">
+                    .com
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="b">
+                    www
+                </label>
+
+                <label>
+                    <input type="radio" name="q6" value="c">
+                    https
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 7 -->
+            <div class="quiz-question">
+
+                <h3>7. ¿Qué función cumple el Web Hosting?</h3>
+
+                <label>
+                    <input type="radio" name="q7" value="a">
+                    Crear el logotipo de una empresa.
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="b">
+                    Almacenar y servir los archivos de un sitio web.
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="c">
+                    Crear preguntas para un cuestionario.
+                </label>
+
+            </div>
+
+
+            <!-- PREGUNTA 8 -->
+            <div class="quiz-question">
+
+                <h3>8. ¿Qué ocurre durante la propagación DNS?</h3>
+
+                <label>
+                    <input type="radio" name="q8" value="a">
+                    Se cambia el diseño de una página.
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="b">
+                    Se crean imágenes para el sitio.
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="c">
+                    La información DNS se actualiza en distintos servidores.
+                </label>
+
+            </div>
+
+
+            <button class="btn" onclick="revisarQuiz()">
+                Revisar respuestas
+            </button>
+
+            <p id="resultado"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 ARLY | Cuestionario Web
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
